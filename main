@@ -1,0 +1,30 @@
+package cat.institutmvm;
+import java.util.Scanner;
+
+public class Main {
+
+    public static final String MSG_NAME = "Introdueix el nom del gat:";
+    public static final String MSG_RACE = "Introdueix la rasa del gat:";
+    public static final String MSG_COLOR = "Introdueix el color del gat:";
+    public static final String MSG_AGE = "Introdueix l'edad del gat:";
+    public static final String MSG_PRICE = "Introdueix el preu del gat:";
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println(MSG_NAME);
+        Cat c= new Cat();
+        c.setNom(sc.next());
+        System.out.println(MSG_RACE);;
+        c.setRace(sc.next());
+        System.out.println(MSG_COLOR);;
+        c.setColor(sc.next());
+        System.out.println(MSG_AGE);;
+        c.setAge(Integer.parseInt(sc.next()));
+        System.out.println(MSG_PRICE);;
+        c.setPrice(Integer.parseInt(sc.next()));
+        System.out.println(c.getNom());
+        System.out.println(c.getRace());
+        System.out.println(c.getColor());
+        System.out.println(c.getAge());
+        System.out.println(c.getPrice());
+    }
+}
